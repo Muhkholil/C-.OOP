@@ -1,0 +1,42 @@
+[22/2 09.33] Radhitya Mahdy Ubaidillah: namespace v21
+{
+    class Kalkulator
+    {
+        public void tambah()
+        {
+            Console.WriteLine("tambah");
+        }
+
+        public void kurang()
+        {
+            Console.WriteLine("kurang");
+        }
+    }
+    class Rumus
+    {
+        public void lingkaran()
+        {
+            Console.WriteLine("lingkaran");
+        }
+
+        public int persegiPanjang(int a, int t)
+        {
+            return a * t;
+        }
+    }
+}
+[22/2 09.33] Radhitya Mahdy Ubaidillah: using v21;
+
+Kalkulator hitung = new Kalkulator();
+
+//hitung.tambah();
+//hitung.kurang();
+
+Console.Write("masukan panjang : ");
+int p = Convert.ToInt32(Console.ReadLine());
+Console.Write("masuk lebar : ");
+
+Rumus rumus = new Rumus();
+int luas = rumus.persegiPanjang(p, 1);
+
+Console.WriteLine($"luas persegi panjang dengan p = {p} dan l = {1} adalah {luas}");
